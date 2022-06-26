@@ -11,6 +11,7 @@ jobs:
     - name: Build document
       uses: devcontainers/ci@v0.2
       with:
+        imageName: ghcr.io/fwilhe2/doc-devcontainer
         runCmd: make
     - uses: actions/upload-artifact@v3
       with:
