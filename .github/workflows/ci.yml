@@ -12,8 +12,9 @@ jobs:
       uses: devcontainers/ci@v0.2
       with:
         imageName: ghcr.io/fwilhe2/doc-devcontainer
+        push: never
         runCmd: make
     - uses: actions/upload-artifact@v3
       with:
         name: my-document
-        path: doc.pdf
+        path: doc.(pdf|html)
