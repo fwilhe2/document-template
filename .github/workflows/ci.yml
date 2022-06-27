@@ -18,5 +18,4 @@ jobs:
       with:
         name: my-document
         path: |
-          doc.pdf
-          doc.html
+          output/
